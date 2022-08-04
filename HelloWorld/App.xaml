@@ -4,9 +4,9 @@
              xmlns:local="clr-namespace:HelloWorld" xmlns:System="clr-namespace:System;assembly=mscorlib"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <System:String x:Key="ciao">Hello</System:String>
-        <System:String x:Key="festafinita">the party is over: Francesca has to come</System:String>
-        <System:String x:Key="inseriscinome">Type your name</System:String>
-        <System:String x:Key="numeronesoft">Welcome to numeronesoft</System:String> 
+        <System:String x:Key="ciao">Ciao</System:String>
+        <System:String x:Key="festafinita">la festa è finita: Francesca sta arrivando!</System:String>
+        <System:String x:Key="inseriscinome">Inserisci il tuo nome</System:String>
+        <System:String x:Key="numeronesoft">Benvenuti numeronesoft</System:String> 
     </Application.Resources>
 </Application>
