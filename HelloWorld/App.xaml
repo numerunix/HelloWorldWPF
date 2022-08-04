@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:HelloWorld" xmlns:System="clr-namespace:System;assembly=mscorlib"
              StartupUri="MainWindow.xaml">
+
     <Application.Resources>
-        <System:String x:Key="ciao">Hello</System:String>
-        <System:String x:Key="festafinita">the party is over: Francesca has to come</System:String>
-        <System:String x:Key="inseriscinome">Type your name</System:String>
-        <System:String x:Key="numeronesoft">Welcome to numeronesoft</System:String> 
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="de_DE.xaml" />
+                <ResourceDictionary Source="en_US.xaml" />
+                <ResourceDictionary Source="es_ES.xaml" />
+                <ResourceDictionary Source="fr_FR.xaml" />
+                <ResourceDictionary Source="it_IT.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
