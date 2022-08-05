@@ -7,32 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-           <Grid x:Name = "FormLayoutGrid" Background = "LightGray"> 
-      <Grid.ColumnDefinitions> 
-         <ColumnDefinition Width = "Auto" /> 
-         <ColumnDefinition /> 
-      </Grid.ColumnDefinitions> 
-		
-      <Grid.RowDefinitions> 
-         <RowDefinition Height = "*" /> 
-         <RowDefinition Height = "*" /> 
-         <RowDefinition Height = "*" />
-         <RowDefinition Height = "*" />
-      </Grid.RowDefinitions>
+        <Grid x:Name = "FormLayoutGrid" Background = "LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "150" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Row = "0" Grid.Column = "0" Text = "{DynamicResource numeronesoft}" 
-         Margin = "10" HorizontalAlignment = "Left" VerticalAlignment = "Center" 
-         Width = "150" Name="numeronesoft"/> 
-      
-      <TextBlock Grid.Row = "1" Grid.Column = "0" Text = "{DynamicResource inseriscinome}" Margin = "10" 
-         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "150" Name="inseriscinome"/> 
-      
-      <TextBox Grid.Row = "1" Grid.Column = "1" Margin = "10" Name="Nome"/>
-               
-      <TextBlock Grid.Row = "2" Grid.Column = "0" Text = "" Margin = "10" 
-         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "400" Name="ciaofrancesca"/>
-            
-      <Button Name="Ok" Grid.Row="3" Grid.Column="0" Click="Ok_Click">Ok</Button>
-   </Grid> 
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+            </Grid.RowDefinitions>
+            <Rectangle Fill="Red" Width="620" Grid.Row="0" Grid.Column="1" Height="100" Margin="0,-1,0,10" />
+            <TextBlock Grid.Column = "1" Text = "{DynamicResource numeronesoft}" 
+          HorizontalAlignment = "Left" VerticalAlignment = "Center" Margin="20"
+         Width = "600" Name="numeronesoft" FontSize="50"/>
+
+            <TextBlock Grid.Row = "1"  Grid.Column = "0" Text = "{DynamicResource inseriscinome}" Margin = "10" 
+         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "150" Name="inseriscinome"/>
+
+            <TextBox Grid.Row = "1" Grid.Column = "1" Margin = "10" Name="Nome" />
+
+            <TextBlock Grid.Row = "2" Grid.Column = "1" Margin = "10,0,0,0" 
+         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "640" Name="ciaofrancesca" Text="" FontSize="25"/>
+
+            <Button Name="Ok" Grid.Row="3" Grid.Column="1" Click="Ok_Click">Ok</Button>
+        </Grid>
     </Grid>
 </Window>
